@@ -1,0 +1,364 @@
+@import url('https://fonts.googleapis.com/css2?family=Great+Vibes&family=Roboto+Condensed&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  list-style-type: none;
+}
+
+:root {
+  --rbc: 'Roboto Condensed', sans-serif;
+  --grtv: 'Great Vibes', cursive;
+  --btn-color: #ec4c5a;
+  --btn-hover: #ee3040;
+}
+
+body {
+  font-family: var(--rbc);
+  min-height: 100vh;
+  color: #424141;
+}
+
+/*--header--*/
+header {
+  width: 100%;
+  height: 75px;
+  background-color: rgba(0,0,0,.5);
+  position: fixed;
+}
+
+header div h3{
+  color: #fefefe;
+  font-family: var(--rbc);
+  font-size: 2.5rem;
+  font-weight: 900;
+  letter-spacing: 5px;
+  line-height: 75px;
+  padding-left: 30px;
+}
+
+#toggler {
+  display: none;
+}
+
+#toggler:checked ~ ul {
+  left: 0;
+}
+
+header nav .toggle-btn {
+  position: absolute;
+  top: 0;
+  right: 0;
+  line-height: 75px;
+  font-size: 1.456rem;
+  margin-right: 20px;
+  color: #fefefe;
+  cursor: pointer;
+}
+
+header nav ul{
+  background-color: rgba(0,0,0,0.95);
+  width: 95%;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  position: absolute;
+  left: -100%;
+  top: 75px;
+  padding-top: 4rem;
+  line-height: 55px;
+  font-family: var(--rbc);
+  transition: all .4s ease;
+}
+
+header nav ul li {
+  border-bottom: 1px solid #eeeeee;
+}
+
+header nav ul li a {
+  display: block;
+  padding-left: 3rem;
+  font-size: 1.2rem;
+  color: #fefefe;
+  text-transform: uppercase;
+}
+
+header nav ul li a:hover, header nav ul li a.current {
+  color: #f17a84;
+}
+
+section {
+  height: 100vh;
+  min-height: 100vh;
+  width: 100%;
+}
+
+/*--showcase--*/
+section#showcase {
+  background: url(../images/showcase.jpg) no-repeat center center/cover;
+}
+
+#showcase .showcase-overlay {
+  width: 100%;
+  height: 100%;
+  background: rgba(0,0,0,.456);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: #fefefe;
+}
+
+#showcase .showcase-overlay h2 {
+  margin-bottom: 8px;
+  font-size: 30px;
+}
+
+#showcase .showcase-overlay .btn {
+  display: inline-block;
+  margin-top: 20px;
+  padding: 15px 35px;
+  font-size: 1.5rem;
+  background: rgba(0,0,0,0.8);
+  color: #fefefe;
+  border: 1px solid #eeeeee;
+  border-radius: 0 15px 15px 15px;
+}
+
+#showcase .showcase-overlay .btn:hover {
+  background: rgba(175, 60, 60, 0.8);
+}
+
+/*--About--*/
+section#about {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: rgb(255, 251, 247);
+  border-bottom: 1px solid #eeeeee;
+}
+
+#about h2 {
+  font-family: var(--grtv);
+  font-size: 2.7rem;
+  font-weight: 550;
+  margin-bottom: 45px;
+}
+
+#about .about-img {
+  display: none;
+}
+
+#about .about-text {
+  text-align: center;
+  padding: 0 35px;
+}
+
+#about .about-text h3 {
+  margin-bottom: 8px;
+  font-size: 18px;
+}
+
+#about .about-text .about-btn {
+  display: inline-block;
+  margin-top: 20px;
+  padding: 15px 30px;
+  background: var(--btn-color);
+  color: #fefefe;
+}
+
+#about .about-text .about-btn:hover {
+  background: var(--btn-hover);
+}
+
+/*--rooms--*/
+section#rooms {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: rgb(255, 251, 247);
+  border-bottom: 1px solid #eeeeee;
+}
+
+#rooms h2 {
+  font-family: var(--grtv);
+  font-size: 2.7rem;
+  font-weight: 550;
+  margin: 25px 0 32px;
+}
+
+#rooms .room-contents {
+  display: flex;
+  flex-direction: column;
+  height: 400px;
+  width: 70%;
+}
+
+#rooms .room-contents .room-img {
+  height: 45%;
+  background: url(../images/room.jpg) no-repeat center center/cover;
+  border-radius: 5px 5px 0 0;
+}
+
+#rooms .room-contents .room-card {
+  height: 55%;
+  padding: 15px 25px;
+  border: 1px solid #eeeeee;
+  border-radius: 0 0 5px 5px;
+}
+
+.room-contents .room-card h3 {
+  margin: 10px 0 7px;
+  font-size: 1.5rem;
+  color: #e44754;
+}
+
+.room-contents .room-card h4 {
+  margin-bottom: 15px;
+  font-size: 1.1rem;
+}
+
+.room-contents .room-card p {
+  margin-bottom: 27px;
+}
+
+.room-contents .room-card ul {
+  display: flex;
+  flex-direction: row;
+  color: #a0a0a0;
+
+}
+
+.room-card ul li {
+  padding: 0 25px;
+  border-right: 1px solid #a0a0a0;
+}
+
+.room-card ul li:first-child {
+  padding-left: 0;
+}
+
+.room-card ul li:last-child {
+  border-right: none;
+}
+
+#rooms .room-btn {
+  display: inline-block;
+  background: var(--btn-color);
+  color: #fefefe;
+  padding: 15px 25px;
+  margin-top: -10px;
+  border-radius: 5px;
+}
+
+#rooms .room-btn:hover {
+  background: var(--btn-hover);
+}
+
+/*--features--*/
+section#features {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: rgb(255, 251, 247);
+  border-bottom: 1px solid #eeeeee;
+}
+
+/*--responsice media query--*/
+@media screen and (min-width: 768px) {
+  /*--header--*/
+  header {
+    background: rgba(0,0,0,.456);
+  }
+
+  header div {
+    z-index: 100;
+  }
+
+  header nav .toggle-btn {
+    display: none;
+  }
+
+  header nav ul{
+    background-color: rgba(0,0,0,0);
+    width: 100%;
+    height: 75px;
+    line-height: 75px;
+    flex-direction: row;
+    justify-content: flex-end;
+    align-items: center;
+    left: 0;
+    top: 0;
+    padding: 0 2rem 0 1rem;
+  }
+
+  header nav ul li {
+    border: none;
+  }
+  
+  header nav ul li a {
+    display: inline-block;
+    padding: 0.7rem;
+  }
+
+  header nav ul li a:hover,
+  header nav ul li a.current {
+    text-decoration: underline;
+    text-underline-position: under;
+  }
+
+  /*--about--*/
+  section#about {
+    display: block;
+    padding-top: 75px;
+    text-align: center;
+  }
+
+  #about .about-contents {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    padding: 25px;
+    height: fit-content;
+  }
+  
+  #about .about-img {
+    display: block;
+    background: url(../images/about-img.jpg) no-repeat center center/cover;
+    height: 250px;
+    border-radius: 3px;
+  }
+
+  /*--rooms--*/
+  #rooms .room-contents {
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+    grid-template-rows: repeat(5, 1fr);
+    width: 100%;
+    padding: 0 45px;
+  }
+
+  #rooms .room-contents .room-img {
+    height: 100%;
+    border-radius: 3px;
+    grid-column: 3 / span 5;
+    grid-row: 1 / span 5;
+  }
+
+  #rooms .room-contents .room-card {
+    height: fit-content;
+    border-radius: 5px;
+    background: #fefefe;
+    grid-column: 1 / span 3;
+    grid-row: 2 / span 3;
+  }
+
+  #rooms .room-btn {
+    margin: 9px 0 25px;
+  }
+}
