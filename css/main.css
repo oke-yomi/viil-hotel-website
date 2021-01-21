@@ -260,15 +260,57 @@ section#rooms {
   background: var(--btn-hover);
 }
 
-/*--features--*/
-section#features {
+/*--services--*/
+section#services {
+  background-color: rgb(255, 251, 247);
+  padding: 30px;
+}
+
+#services h2 {
+  font-family: var(--grtv);
+  font-size: 2.7rem;
+  font-weight: 550;
+  margin: 25px 0 10px;
+  text-align: center;
+}
+
+#services .text {
+  font-size: 1rem;
+  margin-bottom: 10px;
+  text-align: center;
+}
+
+#services .services-grid {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  background-color: rgb(255, 251, 247);
-  border-bottom: 1px solid #eeeeee;
 }
+
+#services .services-grid .grid {
+  width: 300px;
+  height: 200px;
+  margin: 10px auto;
+  color: #fefefe;
+}
+
+#services .services-grid .box-1 {
+  background: url(../images/services/restaurant.jpg) no-repeat center center/cover;
+}
+
+#services .services-grid .box-2 {
+  background: url(../images/services/spa.jpg) no-repeat center center/cover;
+}
+
+#services .services-grid .box-3 {
+  background: url(../images/services/gym.jpg) no-repeat center center/cover;
+}
+
+#services .services-grid .box-4 {
+  background: url(../images/services/relaxation.jpg) no-repeat center center/cover;
+}
+
+
 
 /*--responsice media query--*/
 @media screen and (min-width: 768px) {
