@@ -396,9 +396,42 @@ section#contact {
   outline: none;
 }
 
+/*--footer--*/
+footer {
+  width: 100%;
+  margin: 0 auto;
+  background: #272424;
+  color: #a1a1a1;
+  padding: 20px 50px;
+}
 
+footer .container {
+  display: grid;
+  grid-template-columns: 1fr;
+}
 
+footer .container div {
+  margin-right: 65px;
+  margin-bottom: 20px;
+}
 
+footer .container h3 {
+  font-size: 1.2rem;
+  font-weight: 100;
+  margin-bottom: 10px;
+  text-decoration: underline;
+}
+
+footer .container ul li {
+  font-size: .9rem;
+  font-weight: 300;
+  margin-bottom: 5px;
+}
+
+footer .container ul li a i{
+  color:  #a1a1a1;
+  padding: 0 0 3px;
+}
 
 
 /*--responsice media query--*/
@@ -536,6 +569,12 @@ section#contact {
   .contact-body form .submit {
     width: 40%;
     margin: 0 auto;
+  }
+
+  /*--footer--*/
+  footer .container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
   }
 }
 
