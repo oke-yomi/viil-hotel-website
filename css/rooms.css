@@ -35,6 +35,54 @@ section#rooms {
   border-radius: 5px 5px 0 0;
 }
 
+#rooms .room-contents .room1{
+  background: url(../images/rooms/single-family1.jpg) no-repeat center center/cover;
+}
+
+#rooms .room-contents .room2{
+  background: url(../images/rooms/double-family-1.jpg) no-repeat center center/cover;
+}
+
+#rooms .room-contents .room3{
+  background: url(../images/rooms/executive1.jpg) no-repeat center center/cover;
+}
+
+#rooms .room-contents .room4{
+  background: url(../images/rooms/double-family-1.jpg) no-repeat center center/cover;
+}
+
+#rooms .room-contents .room5{
+  background: url(../images/rooms/single-family2.jpg) no-repeat center center/cover;
+}
+
+#rooms .room-contents .room6{
+  background: url(../images/rooms/single2.jpg) no-repeat center center/cover;
+}
+
+#rooms .room-contents .room7{
+  background: url(../images/rooms/single1.jpg) no-repeat center center/cover;
+}
+
+#rooms .room-contents .room8{
+  background: url(../images/rooms/executive2.jpg) no-repeat center center/cover;
+}
+
+#rooms .room-contents .room9{
+  background: url(../images/rooms/apartment.jpg) no-repeat center center/cover;
+}
+
+#rooms .room-contents .room10{
+  background: url(../images/rooms/executive3.jpg) no-repeat center center/cover;
+}
+
+#rooms .room-contents .room11{
+  background: url(../images/rooms/single2.jpg) no-repeat center center/cover;
+}
+
+#rooms .room-contents .room12{
+  background: url(../images/rooms/single2.jpg) no-repeat center center/cover;
+}
+
 #rooms .room-contents .room-card {
   height: 55%;
   padding: 15px 25px;
@@ -108,8 +156,6 @@ section#rooms {
   }
 
   #rooms .room-contents .room-card {
-    height: 55%;
-    padding: 15px 25px;
     border: 1px solid #eeeeee;
     border-radius: 0 0 5px 5px;
   }
