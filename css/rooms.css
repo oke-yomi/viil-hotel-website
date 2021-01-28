@@ -1,0 +1,116 @@
+@import url('https://fonts.googleapis.com/css2?family=Great+Vibes&family=Roboto+Condensed&display=swap');
+
+section#rooms {
+  background-color: rgb(255, 251, 247);
+}
+
+#rooms h2 {
+  font-family: var(--grtv);
+  font-size: 2.7rem;
+  font-weight: 550;
+  margin: 25px 0 40px;
+  text-align: center;
+}
+
+#rooms .wrapper {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+  grid-template-rows: auto;
+  width: 70vw;
+}
+
+#rooms .room-contents {
+  display: flex;
+  margin: auto auto 35px;
+  flex-direction: column;
+  height: 500px;
+  width: 100%;
+  border: 1px solid #eeeeee;
+  border-radius: 0 0 5px 5px;
+}
+
+#rooms .room-contents .room-img {
+  height: 45%;
+  background: url(../images/room.jpg) no-repeat center center/cover;
+  border-radius: 5px 5px 0 0;
+}
+
+#rooms .room-contents .room-card {
+  height: 55%;
+  padding: 15px 25px;
+  border: none;
+}
+
+.room-contents .room-card h3 {
+  margin: 10px 0 7px;
+  font-size: 1.5rem;
+  color: #e44754;
+}
+
+.room-contents .room-card h4 {
+  margin-bottom: 15px;
+  font-size: 1.1rem;
+}
+
+.room-contents .room-card p {
+  margin-bottom: 27px;
+}
+
+.room-contents .room-card ul {
+  display: flex;
+  flex-direction: row;
+  color: #a0a0a0;
+
+}
+
+.room-card ul li {
+  padding: 0 25px;
+  border-right: 1px solid #a0a0a0;
+}
+
+.room-card ul li:first-child {
+  padding-left: 0;
+}
+
+.room-card ul li:last-child {
+  border-right: none;
+}
+
+#rooms .room-btn {
+  display: block;
+  background: var(--btn-color);
+  width: 45%;
+  align-self: center;
+  text-align: center;
+  color: #fefefe;
+  padding: 15px 25px;
+  margin-top: -10px;
+  margin-bottom: 30px;
+  border-radius: 5px;
+  
+}
+
+#rooms .room-btn:hover {
+  background: var(--btn-hover);
+}
+
+
+
+/*--responsice media query--*/
+@media screen and (min-width: 768px) {
+  #rooms .wrapper {
+    width: 90vw;
+  }
+
+  #rooms .wrapper .room-contents {
+    width: 100%;
+    border: none;
+  }
+
+  #rooms .room-contents .room-card {
+    height: 55%;
+    padding: 15px 25px;
+    border: 1px solid #eeeeee;
+    border-radius: 0 0 5px 5px;
+  }
+}
