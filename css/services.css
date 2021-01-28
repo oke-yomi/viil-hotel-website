@@ -1,0 +1,45 @@
+@import url('https://fonts.googleapis.com/css2?family=Great+Vibes&family=Roboto+Condensed&display=swap');
+
+:root {
+  --rbc: 'Roboto Condensed', sans-serif;
+  --grtv: 'Great Vibes', cursive;
+  --btn-color: #ec4c5a;
+  --btn-hover: #ee3040;
+}
+
+section#services {
+  background-color: rgb(255, 251, 247);
+  padding: 45px;
+  border-bottom: 1px solid #eeeeee;
+}
+
+#services h2 {
+  font-family: var(--grtv);
+  font-size: 2.7rem;
+  font-weight: 550;
+  margin: 25px 0 40px;
+  text-align: center;
+}
+
+#services .offers {
+  font-size: 1rem;
+}
+
+#services .offers ul {
+  padding-left: 30px;
+}
+
+#services .offers ul li{
+  margin-bottom: 10px;
+  list-style: lower-alpha;
+}
+
+#services .offers .service-btn {
+  font-size: 1.2rem;
+  color: var(--btn-color);
+  margin-top: 35px;
+}
+
+#services .offers .service-btn:hover {
+  color: var(--btn-hover);
+}
