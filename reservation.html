@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!--font awesome-->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css" integrity="sha512-HK5fgLBL+xu6dm/Ii3z4xhlSUyZgTT9tuc/hSrtw6uzJOvgRr2a9jyxxT1ely+B+xFAmJKVSTbpM/CuL7qxO8w==" crossorigin="anonymous" />
+
+  <!--custom stylesheet-->
+  <link rel="stylesheet" href="./css/main.css">
+  <link rel="stylesheet" href="./css/reservation.css">
+  <title>Vill | Reservation-page</title>
+</head>
+
+<body>
+  <!--header-->
+  <header class="header">
+    <div>
+      <h3 class="logo">Viil</h3>
+    </div>
+    <nav>
+      <input type="checkbox" id="toggler" class="toggler">
+      <label for="toggler" class="toggle-btn">
+        <span><i class="fas fa-bars"></i></span>
+      </label>
+      <ul>
+        <li><a href="./index.html">Home</a></li>
+        <li><a href="./rooms.html">Rooms</a></li>
+        <li><a href="./services.html">services</a></li>
+        <li><a href="./index.html#contact">Contact</a></li>
+        <li><a href="./reservation.html" class="current">Reservation</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!--reservation-->
+  <section id="reservation">
+    <!-- <h2>Reservation</h2> -->
+    <div class="facilities">
+      <h3>Most popular facilities</h3>
+
+      <ul>
+        <li><i class="fas fa-wifi"></i>Free WiFi</li>
+        <li><i class="fas fa-users"></i>Family rooms</li>
+        <li><i class="fas fa-utensils"></i>Restaurant</li>
+        <li><i class="fas fa-swimmer"></i>Swimming-pool</li>
+        <li><i class="fas fa-dumbbell"></i>Good fitness center</li>
+        <li><i class="fas fa-shuttle-van"></i>Airport shuttle</li>
+        <li><i class="fas fa-spa"></i>Spa salon</li>
+      </ul>
+    </div>
+
+    <div class="columns">
+      <i class="far fa-credit-card"> &nbsp;&nbsp;<strong>No credit card needed to book.</strong>  We'll send you an email confirming your reservation. <br><br>
+      Get instant confirmation with FREE cancellation at most properties on our site</i>
+    </div>
+
+    <div class="booking">
+      <h3>Availability</h3>
+      <form action="">
+        <div class="check">
+          <label for="check-in">Check-in </label>
+          <input type="date" name="check-in" id="check-in">
+
+          <label for="check-out">Check-out </label>
+          <input type="date" name="check-out" id="check-out">
+        </div>
+        
+        <div class="options">
+          <label for="numOfRoom">Rooms</label>
+          <select name="numOfRoom" id="numOfRoom">
+            <option value="1">1</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="4">4</option>
+            <option value="5">5</option>
+            <option value="6">6</option>
+            <option value="7">7</option>
+            <option value="8">8</option>
+            <option value="9">9</option>
+            <option value="10">10</option>
+          </select>
+
+          <label for="adults">Adults</label>
+          <select name="adults" id="adults">
+            <option value="1">1</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="4">4</option>
+            <option value="5">5</option>
+            <option value="6">6</option>
+            <option value="7">7</option>
+            <option value="8">8</option>
+            <option value="9">9</option>
+            <option value="10">10</option>
+          </select>
+
+          <label for="children">Children</label>
+          <select name="children" id="children">
+            <option value="1">1</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="4">4</option>
+            <option value="5">5</option>
+            <option value="6">6</option>
+            <option value="7">7</option>
+            <option value="8">8</option>
+            <option value="9">9</option>
+            <option value="10">10</option>
+          </select>
+        </div>
+
+        <input type="submit" value="Check Availability" onclick="clicked(event)" class="submit">
+
+      </form>
+    </div>
+  </section>
+
+
+  <!--footer-->
+  <footer>
+    <div class="container">
+      <div class="info">
+        <h3>Information</h3>
+        <ul>
+          <li>About</li>
+          <li>Contact</li>
+          <li>Terms</li>
+        </ul>
+      </div>
+  
+      <div class="connect">
+        <h3>Connect us</h3>
+        <ul>
+          <li>
+            <i class="fas fa-phone-alt"></i>
+            &nbsp; +332 8188 677</li>
+          <li>
+            <i class="fas fa-envelope"></i>
+            &nbsp; villhotel@gmail.com
+          </li>
+          <li>
+            <i class="fas fa-map-marker-alt"></i>
+            &nbsp; 10 Lorem ipsum dolor, Surulere, Lagos
+          </li>
+        </ul>
+      </div>
+  
+      <div class="socials">
+        <h3>Follow us</h3>
+        <ul>
+          <li>
+            <a href="http://www.instagram.com" target="_blank">
+              <i class="fab fa-instagram fa-2x"></i>
+            </a>
+          </li>
+
+          <li>
+            <a href="http://www.facebook.com" target="_blank">
+              <i class="fab fa-facebook-f fa-2x"></i>
+            </a>
+          </li>
+
+          <li>
+            <a href="http://www.twitter.com" target="_blank">
+              <i class="fab fa-twitter fa-2x"></i>
+            </a>
+          </li>
+        </ul>
+      </div>
+    </div>
+    
+  </footer>
+</body>
+
+<script>
+  function clicked(e)
+  {
+      if(!confirm('Rooms Available... Proceed?')) {
+          e.preventDefault();
+      }
+  }
+</script>
+</html>
